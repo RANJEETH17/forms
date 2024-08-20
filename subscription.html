@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Form</title>
+</head>
+<body>
+    <center><h1>Subscription Form</h1></center>
+    <form action="/subscribe_service" method="post">
+        <table align="center" cellpadding="5" cellspacing="0">
+            <tr>
+                <td><label for="subscription-name">Name:</label></td>
+                <td><input type="text" id="subscription-name" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="subscription-email">Email:</label></td>
+                <td><input type="email" id="subscription-email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="subscription-plan">Subscription Plan:</label></td>
+                <td>
+                    <select id="subscription-plan" name="plan" required>
+                        <option value="">Select Plan</option>
+                        <option value="basic">Basic</option>
+                        <option value="standard">Standard</option>
+                        <option value="premium">Premium</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="payment-info">Payment Information:</label></td>
+                <td><input type="text" id="payment-info" name="payment-info" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><button type="submit">Subscribe</button></td>
+            </tr>
+        </table>
+    </form>
+    <center><a href="index.html">Back to Menu</a></center>
+</body>
+</html>

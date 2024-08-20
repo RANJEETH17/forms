@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <center><h1>Feedback Form</h1></center>
+    <form action="/submit_feedback" method="post">
+        <table align="center" cellpadding="5" cellspacing="0">
+            <tr>
+                <td><label for="feedback-name">Name:</label></td>
+                <td><input type="text" id="feedback-name" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="feedback-email">Email:</label></td>
+                <td><input type="email" id="feedback-email" name="email" required></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <fieldset>
+                        <legend>Rating:</legend>
+                        <input type="radio" id="rating-1" name="rating" value="1"><label for="rating-1">1</label>
+                        <input type="radio" id="rating-2" name="rating" value="2"><label for="rating-2">2</label>
+                        <input type="radio" id="rating-3" name="rating" value="3"><label for="rating-3">3</label>
+                        <input type="radio" id="rating-4" name="rating" value="4"><label for="rating-4">4</label>
+                        <input type="radio" id="rating-5" name="rating" value="5"><label for="rating-5">5</label>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="comments">Comments:</label></td>
+                <td><textarea id="comments" name="comments" rows="4"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><button type="submit">Submit Feedback</button></td>
+            </tr>
+        </table>
+    </form>
+    <center><a href="index.html">Back to Menu</a></center>
+</body>
+</html>

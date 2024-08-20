@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <center><h1>Job Application Form</h1></center>
+    <form action="/submit_job_application" method="post" enctype="multipart/form-data">
+        <table align="center" cellpadding="5" cellspacing="0">
+            <tr>
+                <td><label for="job-name">Name:</label></td>
+                <td><input type="text" id="job-name" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="job-email">Email:</label></td>
+                <td><input type="email" id="job-email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="job-phone">Phone Number:</label></td>
+                <td><input type="tel" id="job-phone" name="phone" required></td>
+            </tr>
+            <tr>
+                <td><label for="resume">Resume:</label></td>
+                <td><input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required></td>
+            </tr>
+            <tr>
+                <td><label for="cover-letter">Cover Letter:</label></td>
+                <td><textarea id="cover-letter" name="cover-letter" rows="4" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="position">Position Applied For:</label></td>
+                <td><input type="text" id="position" name="position" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><button type="submit">Apply</button></td>
+            </tr>
+        </table>
+    </form>
+    <center><a href="index.html">Back to Menu</a></center>
+</body>
+</html>

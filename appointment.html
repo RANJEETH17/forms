@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking</title>
+</head>
+<body>
+    <center><h1>Appointment Booking</h1></center>
+    <form action="/book_appointment" method="post">
+        <table align="center" cellpadding="5" cellspacing="0">
+            <tr>
+                <td><label for="appointment-name">Name:</label></td>
+                <td><input type="text" id="appointment-name" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="appointment-email">Email:</label></td>
+                <td><input type="email" id="appointment-email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="appointment-phone">Phone Number:</label></td>
+                <td><input type="tel" id="appointment-phone" name="phone" required></td>
+            </tr>
+            <tr>
+                <td><label for="appointment-date">Date:</label></td>
+                <td><input type="date" id="appointment-date" name="date" required></td>
+            </tr>
+            <tr>
+                <td><label for="appointment-time">Time:</label></td>
+                <td><input type="time" id="appointment-time" name="time" required></td>
+            </tr>
+            <tr>
+                <td><label for="reason">Reason for Appointment:</label></td>
+                <td><textarea id="reason" name="reason" rows="4" required></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><button type="submit">Book Appointment</button></td>
+            </tr>
+        </table>
+    </form>
+    <center><a href="index.html">Back to Menu</a></center>
+</body>
+</html>
